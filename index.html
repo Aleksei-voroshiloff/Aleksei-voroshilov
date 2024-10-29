@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./index.js"></script>
+    <title>Транслит</title>
+  </head>
+  <body>
+    <div class="father">
+      <div class="heading">T.R.A.N.S.L.I.T.</div>
+      <div class="form">
+        <input class="input" type="text" placeholder="Начните вводить текст" />
+        <button class="button">Добавить</button>
+      </div>
+      <div class="word-list">
+        <div class="all-string">
+          <div class="rus-word">
+            <div class="number">1</div>
+            Привет 👋
+          </div>
+          <div class="translit-word">
+            Privet 👋
+            <img class="krest1" src="./img/krest.svg" alt="krest" />
+          </div>
+        </div>
+      </div>
+      <div class="delet">
+        <button class="delet-all">
+          <img class="krest2" src="./img/krest.svg" alt="krest" /> Очистить всё
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
