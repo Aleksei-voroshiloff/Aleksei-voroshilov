@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  background-color: rgb(16, 85, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.father {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  width: 70%;
+  margin-top: 10%;
+  border-radius: 15px;
+}
+
+.all-string {
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+
+.word-list {
+  margin-top: 60px;
+  width: 500px;
+  font-size: 18px;
+  overflow: hidden;
+  border-radius: 8px;
+  border-bottom: none;
+}
+
+.rus-word {
+  width: 50%;
+  display: flex;
+  height: 40px;
+  background-color: rgba(240, 240, 240, 1);
+  border-right: 1px solid rgba(17, 17, 17, 1);
+  align-items: center;
+  position: relative;
+}
+
+.number {
+  margin-left: 12px;
+  margin-right: 24px;
+  display: flex;
+}
+
+.translit-word {
+  width: 50%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.164);
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-left: 1px solid rgba(17, 17, 17, 1);
+  padding-left: 24px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -0.08em;
+  color: rgba(69, 32, 171, 1);
+  margin-top: 44px;
+}
+
+.form {
+  margin-top: 86px;
+  display: flex;
+  border: 3px solid rgb(17, 17, 17, 1);
+  width: 500px;
+  height: 56px;
+  border-radius: 14px;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 49px;
+  border-radius: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
+.button {
+  background-color: rgb(17, 17, 17, 1);
+  color: white;
+  height: 38px;
+  width: 107px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  gap: 10px;
+  align-self: center;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.delet-all {
+  background-color: rgba(173, 173, 173, 1);
+  width: 176px;
+  height: 38px;
+  padding: 6px 10px 8px 10px;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  letter-spacing: -0.05em;
+  text-align: right;
+}
+
+.delet {
+  margin-bottom: 45px;
+  margin-top: 60px;
+}
+
+.krest2 {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 15px;
+}
+
+.delet:hover {
+  transform: scale(1.02);
+}
+
+.krest1 {
+  right: 200px;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  right: 11px;
+}
+
+.krest1:hover {
+  transform: scale(1.07);
+}
+
+@media screen and (min-width: 360px) and (max-width: 760px) {
+  .heading {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .father {
+    width: 95%;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  .form,
+  .word-list {
+    width: 96%;
+  }
+  input {
+    font-size: 14px;
+  }
+}
